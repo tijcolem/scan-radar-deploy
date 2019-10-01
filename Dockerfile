@@ -10,7 +10,7 @@ RUN pip install flask
 # By default, allow unlimited file sizes, modify it to limit the file sizes
 # To have a maximum of 1 MB (Nginx's default) change the line to:
 # ENV NGINX_MAX_UPLOAD 1m
-ENV NGINX_MAX_UPLOAD 0
+ENV NGINX_MAX_UPLOAD 1m
 
 # By default, Nginx listens on port 80.
 # To modify this, change LISTEN_PORT environment variable.
